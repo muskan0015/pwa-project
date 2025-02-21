@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Box </title>
+
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <script src="js/main.js" module></script>
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1>Movie Box</h1>
+        <div class="nav-icons">
+            <div class="nav-item" id="cart-nav">
+                <span class="material-icons">shopping_cart</span>
+                <span>Cart</span>
+                <span id="cart-count" class="cart-count">0</span>
+            </div>
+            <div class="nav-item" id="rented-nav">
+                <span class="material-icons">movie</span>
+                <span>Rented</span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!--  Home Section -->
+        <section id="home">
+            <h2>Search for Movies</h2>
+            <input type="text" id="search-input" placeholder="Search movies...">
+            <button id="search-btn">Search</button>
+            <div id="search-results" class="movies-container"></div>
+        </section>
+
+        <!--  Cart Section -->
+        <section id="cart" class="hidden">
+            <h2>Your Cart</h2>
+            <div id="cart-movies" class="movies-container"></div>
+            <button id="rent-all">Rent All</button>
+        </section>
+
+        <!-- Rented Movies Section -->
+        <section id="rented" class="hidden">
+            <h2>Rented Movies</h2>
+            <div id="rented-movies" class="movies-container"></div>
+        </section>
+
+        <!-- View Movie Section -->
+        <section id="view" class="hidden">
+            <h2>Watch Movie</h2>
+            <video id="movie-player" controls>
+                <source src="placeholder.mp4" type="video/mp4">
+            </video>
+            <button id="mark-watched">Mark as Watched</button>
+        </section>
+
+    </main>
+
+    
+    
+</body>
+</html>
