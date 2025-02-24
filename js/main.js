@@ -9,7 +9,7 @@ const cartChannel = new BroadcastChannel("cart-updates");
 let cart = [];
 let rented = [];
 
-//  Wait until the page is fully loaded before running init()
+
 window.onload = function () {
     init();
 };
@@ -37,7 +37,7 @@ function init() {
 
     //  Only run if all elements exist
     if (!searchInput || !searchBtn || !cartNav || !rentedNav || !searchResults || !cartMovies || !rentedMovies) {
-        console.error("🚨 Some elements are missing from the DOM! Fix the HTML.");
+        console.error(" Some elements are missing from the DOM! Fix the HTML.");
         return;
     }
 

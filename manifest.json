@@ -1,6 +1,6 @@
 {
-    "name": "Movie Rental PWA",
-    "short_name": "MovieRental",
+    "name": "Movie Box",
+    "short_name": "Movie Box",
     "description": "A progressive web app for renting movies offline.",
     "start_url": "./index.html",
     "display": "standalone",
